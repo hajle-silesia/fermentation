@@ -3,7 +3,7 @@
 
 
 DeviceManager deviceManager;
-IotClient iotClient("144.24.183.200", 1883);
+IotClient iotClient("hajle-silesia.online", 1883);
 
 void setup() {
   Serial.begin(9600);
