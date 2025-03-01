@@ -29,7 +29,7 @@ void loop()
     Serial.println(deviceManager.devices[i].temperature);
 
     iotClient.publish(
-      "temperature/" + deviceManager.devices[i].address,
+      "ds18b20/" + deviceManager.devices[i].address + "/temperature",
       deviceManager.devices[i].temperature
     );
   }
